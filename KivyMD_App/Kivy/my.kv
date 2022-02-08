@@ -1,0 +1,45 @@
+<MyGrid>
+
+    name: name
+    email: email
+
+
+    GridLayout:
+        cols: 1
+        size: root.width, root.height
+        Button:
+            text: "Find Out More About Happyson"
+
+        GridLayout:
+            cols: 2
+
+            Label:
+                text: "Name:"
+            TextInput:
+                id: name
+                multiline: False
+
+            Label:
+                text: "School"
+            TextInput:
+                multiline: False
+
+            Label:
+                text: "Email"
+            TextInput:
+                id: email
+                multiline: False
+
+        GridLayout:
+            cols: 2
+            Button:
+                text: "Sign In"
+            Button:
+                text: "Sign Up"
+
+        Button:
+            text: "Reset"
+        Button:
+            text: "Submit"
+            on_press:root.btn()
+
